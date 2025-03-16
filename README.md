@@ -1,58 +1,41 @@
-# Fault-Detection-and-Prevention-using-Machine-Learning
+# Fault Detection and Prevention using Machine Learning
 
-## 📌 Project Overview
-This project aims to **detect irregularities in energy consumption patterns** using machine learning techniques. The system utilizes an **autoencoder-based anomaly detection model** to analyze temperature variations and identify faults or anomalies in energy usage.
+## Project Overview
+This project focuses on detecting irregularities in energy consumption patterns using deep learning techniques for fault detection and prevention. The system leverages an autoencoder model to identify anomalies based on temperature data.
 
-## 🚀 Features
-- **Anomaly Detection**: Identifies irregularities based on temperature inputs.
-- **Machine Learning Model**: Uses an autoencoder neural network for unsupervised anomaly detection.
-- **Web Interface**: Interactive UI built with Streamlit for easy input and visualization.
-- **Threshold-based Evaluation**: Computes reconstruction errors to classify data as normal or anomalous.
+## Repository
+GitHub: [Fault Detection and Prevention using Machine Learning](https://github.com/its-anuskapalit/Fault-Detection-and-Prevention-using-Machine-Learning)
 
+## Dataset
+We use a thermal imaging dataset for fault detection and classification:
+[Dataset Link](https://universe.roboflow.com/thermal-image-fault-detection-and-classification/thermal-imaging-nx6hi/dataset/8)
 
-## 🔧 Installation
+## Features
+- Deep learning-based anomaly detection using autoencoders.
+- Visualization of detected anomalies and reconstruction errors.
+
+## Installation
 ### Prerequisites
-Ensure you have Python installed. You can set up the environment using the following steps:
+Ensure you have Python 3.12 installed along with the necessary dependencies.
 
-```sh
-# Clone the repository
-git clone https://github.com/yourusername/fault-detection.git
-cd fault-detection
+### Steps
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/its-anuskapalit/Fault-Detection-and-Prevention-using-Machine-Learning.git
+   cd Fault-Detection-and-Prevention-using-Machine-Learning
+   ```
 
+## Usage
+- Upload temperature readings to detect anomalies.
+- View predictions in real-time with visualized results.
+- Use the model for preventive maintenance by identifying irregular energy consumption patterns.
 
+## Model
+The deep learning model is built using an autoencoder architecture that reconstructs input features and identifies anomalies based on reconstruction error.
 
-### 2️⃣ Using the Model in a Script
-```python
-from model import predict_anomaly
+## Contributing
+Feel free to contribute by raising issues or submitting pull requests.
 
-# Example input
-min_temp, center_temp, max_temp = 30, 60, 90
-result = predict_anomaly(min_temp, center_temp, max_temp)
-
-print(f"Anomaly detection result: {'ANOMALY' if result['is_anomaly'] else 'NORMAL'}")
-```
-
-## 📊 Model Details
-- **Model Type**: Autoencoder
-- **Input Features**: min_temp, center_temp, max_temp
-- **Loss Function**: Mean Squared Error (MSE)
-- **Evaluation Metric**: Reconstruction error
-
-## ⚠️ Troubleshooting
-### ❌ ValueError: Expected shape=(None, 4), found shape=(1, 3)
-- Ensure that the model was trained on **only three features** (min_temp, center_temp, max_temp).
-- If the model expects four features, add a placeholder feature (e.g., `0`).
-
-```python
-input_data = np.array([[0, min_temp, center_temp, max_temp]])
-```
-
-## 📜 License
-This project is licensed under the MIT License. See `LICENSE` for details.
-
-## 🤝 Contributing
-Feel free to fork, open issues, or submit pull requests to improve the project.
-
-## 📩 Contact
-For questions or collaboration, reach out at [your-email@example.com].
+## Contact
+For inquiries, contact [Anuska Palit](itsanuskapalit@gmail.com).
 
