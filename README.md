@@ -1,5 +1,4 @@
 # Fault-Detection-and-Prevention-using-Machine-Learning
-# Fault Detection and Prevention using Machine Learning
 
 ## 📌 Project Overview
 This project aims to **detect irregularities in energy consumption patterns** using machine learning techniques. The system utilizes an **autoencoder-based anomaly detection model** to analyze temperature variations and identify faults or anomalies in energy usage.
