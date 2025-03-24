@@ -1,0 +1,4 @@
+Model,Mean Anomaly Score,Max Anomaly Score,Anomalies Detected
+Advanced_Thermal_Autoencoder,0.0010857852970952032,0.07826051211411135,18
+Temporal_Autoencoder,0.0004768741161378763,0.04458108478007464,18
+Ensemble,0.012029629063152523,0.8088463837490625,18
